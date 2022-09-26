@@ -24,7 +24,7 @@ class util {
     Nav("College Website", Icons.web, route.Website),
     Nav("Mood On", Icons.music_note_rounded, route.Music)
   ];
-  List<Widget> wd = [
+  List<Widget> College = [
     MyCOllegePage(),Syllabus(),Statistics(),Personal()
   ];
 }

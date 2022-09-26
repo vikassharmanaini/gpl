@@ -28,7 +28,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         iconTheme: const IconThemeData(color: Color(0xFF1F1F1F)),
       ),
       drawer: SafeArea(child: MyDrawer()),
-      body: util().wd[_ind],
+      body: util().College[_ind],
       bottomNavigationBar: CurvedNavigationBar(
           height: 60,
           buttonBackgroundColor: Colors.orange,
