@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gpl/Screen/college/Personal.dart';
 import 'package:gpl/Screen/college/Sylllabus.dart';
-import 'package:gpl/Screen/college/open.dart';
+import 'package:gpl/Screen/college/Mycollegepage.dart';
 import 'package:gpl/Screen/college/statistics.dart';
 import 'package:gpl/utile/router.dart';
 
