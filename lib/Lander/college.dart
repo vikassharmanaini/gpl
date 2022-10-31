@@ -16,6 +16,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("My College"),
+        centerTitle: true,
         actions: [
           IconButton(
               onPressed: () {
@@ -30,6 +32,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       drawer: SafeArea(child: MyDrawer()),
       body: util().College[_ind],
       bottomNavigationBar: CurvedNavigationBar(
+          animationDuration: Duration(milliseconds: 300),
           height: 60,
           buttonBackgroundColor: Colors.orange,
           color: Colors.blue,
@@ -40,11 +43,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               size: 35,
               color: Colors.white,
               semanticLabel: "College",
-            ),
-            Icon(
-              Icons.book,
-              size: 35,
-              color: Colors.white,
             ),
             Icon(
               Icons.stacked_bar_chart_sharp,
@@ -61,7 +59,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             setState(() {
               _ind = index;
             });
-            //Handle button tap
           }),
     );
   }

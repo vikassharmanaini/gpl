@@ -16,23 +16,24 @@ class _CalenderState extends State<Calender> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xEFB3B2B2),
+        title: Text("E-Calender"),
+        // backgroundColor: Color(0xEFB3B2B2),
       ),
       drawer: SafeArea(child: MyDrawer()),
       body: Container(
         decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [
-          Color(0xFF002B41),
-          Color(0xFF494949),
-          Color(0x6F4B2200)
-        ], begin: Alignment.topLeft)),
+            // gradient: LinearGradient(
+            //     colors: [Color(0xFF002B41), Color(0xFF494949), Color(0x6F4B2200)],
+            //     begin: Alignment.topLeft),
+            ),
         child: SafeArea(
           child: Column(
             children: [
               Expanded(
                 child: CbMonthBuilder(
                   cbConfig: CbConfig(
-                    startDate: DateTime(2015),
+                    weekStartsFrom: WeekStartsFrom.monday,
+                    startDate: DateTime(2020),
                     endDate: DateTime(2026),
                     selectedDate: DateTime.now(),
                     selectedYear: DateTime(DateTime.now().year),

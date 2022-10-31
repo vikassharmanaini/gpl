@@ -66,7 +66,7 @@ class _MyDrawerState extends State<MyDrawer> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 50, top: 10),
+              padding: EdgeInsets.symmetric(vertical: 10),
               child: FloatingActionButton.extended(
                   onPressed: () {},
                   label: Text(

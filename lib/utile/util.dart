@@ -22,9 +22,21 @@ class util {
     Nav("E-Calender", Icons.calendar_month, route.Calender),
     Nav("College Location", Icons.location_pin, route.Location),
     Nav("College Website", Icons.web, route.Website),
-    Nav("Mood On", Icons.music_note_rounded, route.Music)
+    Nav("Mood On", Icons.headset, route.Music)
   ];
-  List<Widget> College = [
-    MyCOllegePage(),Syllabus(),Statistics(),Personal()
+  List<Widget> College = [MyCOllegePage(), Statistics(), Personal()];
+  List<_mycollegehomepagetile> Mycollegepagetile = [
+    _mycollegehomepagetile('assets/BTEUP.png', "BTEUP", "https://bteup.ac.in/webapp/defaultnew.aspx"),
+    _mycollegehomepagetile('assets/urise.png', "URISE", "https://urise.up.gov.in/"),
+    _mycollegehomepagetile('assets/aicte.jpeg', "AICTE", "https://www.aicte-india.org/"),
+    _mycollegehomepagetile('assets/swayam.jpeg', "Swayam", "https://swayam.gov.in/")
   ];
+}
+
+class _mycollegehomepagetile {
+  final String imgsrc;
+  final String title;
+  final String url;
+
+  _mycollegehomepagetile(this.imgsrc, this.title, this.url);
 }
